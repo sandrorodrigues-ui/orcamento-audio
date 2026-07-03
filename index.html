@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Equipamentos de Áudio Profissional</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --text-color: #334155;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--card-background);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 14px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+
+        .product-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            background-color: #fff;
+        }
+
+        .btn-link {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: var(--secondary-color);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+
+        .total-row {
+            font-weight: bold;
+            background-color: #eff6ff !important;
+            font-size: 16px;
+            color: var(--primary-color);
+        }
+
+        .total-price {
+            font-size: 18px;
+            color: #1d4ed8;
+        }
+
+        .obs-section {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Orçamento de Equipamentos de Áudio</h1>
+        <p class="subtitle">Levantamento de Preços para Atualização do Sistema de Som</p>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 110px;" class="text-center">Foto Real</th>
+                <th>Item / Equipamento</th>
+                <th>Descrição Técnica</th>
+                <th class="text-center">Qtd.</th>
+                <th class="text-right">Unitário</th>
+                <th class="text-right">Total</th>
+                <th class="text-center">Link de Compra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center"><img src="mesa.jpg" class="product-img" alt="Mesa de Som"></td>
+                <td><strong>Mesa De Som Vda208l</strong></td>
+                <td>8 canais, Mixer profissional, Bluetooth e interface USB.</td>
+                <td class="text-center">1</td>
+                <td class="text-right">R$ 546,84</td>
+                <td class="text-right">R$ 546,84</td>
+                <td class="text-center"><a href="https://www.mercadolivre.com.br/mesa-de-som-profissional-8-canais-mixer-vda208l-bluetooth/up/MLBU3121860949?matt_tool=18956390&utm_source=google_shopping&utm_medium=organic&pdp_filters=item_id%3AMLB5351479204&from=gshop" target="_blank" class="btn-link">Comprar Item</a></td>
+            </tr>
+            <tr>
+                <td class="text-center"><img src="caixas.jpg" class="product-img" alt="Caixas"></td>
+                <td><strong>Par Caixa Line Array C100</strong></td>
+                <td>Sistema Ativa e Passiva, 200wrms, cor branca.</td>
+                <td class="text-center">1</td>
+                <td class="text-right">R$ 1.837,00</td>
+                <td class="text-right">R$ 1.837,00</td>
+                <td class="text-center"><a href="https://www.amazon.com.br/Passiva-200wrms-Brancas-Igreja-Eventos/dp/B0G6TVRMKT" target="_blank" class="btn-link">Comprar Item</a></td>
+            </tr>
+            <tr>
+                <td class="text-center"><img src="microfone.jpg" class="product-img" alt="Microfone Bastão"></td>
+                <td><strong>Microfone Bastão AX800HT</strong></td>
+                <td>Sem fio, profissional com Capsula A8 de alta fidelidade.</td>
+                <td class="text-center">2</td>
+                <td class="text-right">R$ 642,45</td>
+                <td class="text-right">R$ 1.284,90</td>
+                <td class="text-center"><a href="https://armer.com.br/produtos/microfone-sem-fio-bastao-armer-ax800ht-capsula-a8-unitario/" target="_blank" class="btn-link">Comprar Item</a></td>
+            </tr>
+            <tr>
+                <td class="text-center"><img src="gooseneck.jpg" class="product-img" alt="Microfone Gooseneck"></td>
+                <td><strong>Microfone Gooseneck GNW800</strong></td>
+                <td>Microfone de mesa sem fio, haste articulada para pulpito.</td>
+                <td class="text-center">5</td>
+                <td class="text-right">R$ 755,50</td>
+                <td class="text-right">R$ 3.777,50</td>
+                <td class="text-center"><a href="https://armer.com.br/produtos/microfone-de-mesa-sem-fio-gooseneck-armer-gnw800/" target="_blank" class="btn-link">Comprar Item</a></td>
+            </tr>
+            <tr>
+                <td class="text-center"><img src="receptor.jpg" class="product-img" alt="Receptor"></td>
+                <td><strong>Receptor Armer AX OCTA G2</strong></td>
+                <td>Receptor profissional UHF de 8 canais independentes.</td>
+                <td class="text-center">1</td>
+                <td class="text-right">R$ 2.979,20</td>
+                <td class="text-right">R$ 2.979,20</td>
+                <td class="text-center"><a href="https://armer.com.br/produtos/receptor-para-microfone-sem-fio-profissional-8-canais-armer-ax-octa-g2/" target="_blank" class="btn-link">Comprar Item</a></td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="4">VALOR TOTAL DO INVESTIMENTO</td>
+                <td colspan="2" class="text-right total-price">R$ 10.425,44</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="obs-section">
+        <h2>Observações Importantes</h2>
+        <p>O receptor Armer suporta ate 8 microfones simultaneos, centralizando a frequencia do sistema.</p>
+    </div>
+</div>
+
+</body>
+</html>
